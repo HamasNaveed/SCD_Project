@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-11-23T09:49:35.136Z",
+  "totalRecords": 5,
+  "records": [
+    {
+      "id": 1763889041215,
+      "name": "Hamas",
+      "value": "12"
+    },
+    {
+      "id": 1763889620757,
+      "name": "hamas2",
+      "value": "15"
+    },
+    {
+      "id": 1763890026411,
+      "name": "backuptester",
+      "value": "43"
+    },
+    {
+      "id": 1763890230564,
+      "name": "backtester true",
+      "value": "123"
+    },
+    {
+      "id": 1763891375135,
+      "name": "hamas",
+      "value": "123"
+    }
+  ]
+}

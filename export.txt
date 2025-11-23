@@ -1,0 +1,18 @@
+=== NodeVault Export ===
+Export Date: 11/23/2025, 9:21:07 AM
+Total Records: 2
+File: export.txt
+=======================
+
+Record 1:
+  ID: 1763889041215
+  Name: Hamas
+  Value: 12
+  Created: 11/23/2025
+-------------------
+Record 2:
+  ID: 1763889620757
+  Name: hamas2
+  Value: 15
+  Created: 11/23/2025
+-------------------

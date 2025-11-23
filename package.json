@@ -1,0 +1,10 @@
+{
+  "name": "nodevault",
+  "version": "1.0.0",
+  "description": "NodeVault with MongoDB",
+  "main": "main.js",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mongodb": "^6.0.0"
+  }
+}

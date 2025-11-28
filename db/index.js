@@ -4,7 +4,7 @@ const vaultEvents = require('../events');
 const mongodb = require('./mongodb');
 
 // Use file system by default, can be switched to MongoDB
-let useMongoDB = false;
+let useMongoDB = true;
 
 async function initializeDatabase() {
   // For now, use file system. We'll switch to MongoDB after testing

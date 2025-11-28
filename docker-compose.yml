@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo-local:latest
+    container_name: mongodb
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - nodevault-network
+
+  nodevault-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: nodevault-app
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_CONNECTION_STRING=mongodb://mongodb:27017
+      - MONGODB_DATABASE_NAME=nodevault
+      - MONGODB_COLLECTION_NAME=records
+      - NODE_ENV=production
+    networks:
+      - nodevault-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  nodevault-network:
+    driver: bridge

@@ -1,5 +1,5 @@
 # Use Node.js 18 (matches our application requirements)
-FROM node:18-alpine
+FROM node:20-alpine
 
 # Set working directory
 WORKDIR /app
@@ -16,5 +16,8 @@ COPY . .
 # Create necessary directories
 RUN mkdir -p data backups
 
+EXPOSE 3000
+
 # Start the application
-CMD ["node", "main.js"]
+CMD ["node", "server.js"]
+

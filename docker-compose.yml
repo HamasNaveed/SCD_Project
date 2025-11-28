@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   mongodb:
-    image: mongo-local:latest
+    image: mongo:latest
     container_name: mongodb
     volumes:
       - mongodb_data:/data/db
@@ -23,6 +23,8 @@ services:
       - NODE_ENV=production
     networks:
       - nodevault-network
+    ports:
+    - "3000:3000"
 
 volumes:
   mongodb_data:
